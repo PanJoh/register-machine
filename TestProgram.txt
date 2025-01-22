@@ -1,0 +1,20 @@
+    st 2
+    loadImm 0
+    st 3
+    loadImm 1
+    st 4
+    ld 2
+loop:
+    jnz cont
+    ld 3
+    hlt
+cont:
+    ld 3
+    add 1
+    st 3
+    ld 2
+    sub 4
+    st 2
+    jmp loop
+
+    
